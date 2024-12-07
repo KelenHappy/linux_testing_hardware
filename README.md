@@ -1,4 +1,4 @@
-# linux_testing  
+# linux_testing_hardware
 ## Install  
 ```sh
 sudo apt-get install hdparm
