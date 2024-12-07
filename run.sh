@@ -1,7 +1,8 @@
 #!/bin/bash
-sudo smartctl -t short
 #/dev/changeToYourDisk
 sudo smartctl -a /dev/nvme0
-#sudo memtester testMemorySize testIterations
+#/dev/changeToYourDisk
+sudo hdparm -tT /dev/nvme0n1
+#memtester testMemorySize testIterations
 sudo memtester 1G 1
 
