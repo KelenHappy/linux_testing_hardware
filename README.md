@@ -1,11 +1,11 @@
 # linux_testing  
 ## Install  
-''
-sudo apt-get install hdparm  
-''
-''
-sudo apt-get install smartmontools  
-''
-''
-sudo apt-get install memtest  
-''
+```sh
+sudo apt-get install hdparm
+```sh
+sudo apt-get install smartmontools 
+```
+```sh
+sudo apt-get install memtest 
+```
+
