@@ -1,6 +1,8 @@
 #!/bin/bash
 #CPU
-sudo stress
+# --cpu
+stress --cpu $(nproc) --timeout 1m
+stress --cpu 1 --timeout 1m
 
 #/dev/changeToYourDisk
 sudo smartctl -a /dev/nvme0
