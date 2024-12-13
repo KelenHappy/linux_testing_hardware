@@ -1,4 +1,7 @@
 #!/bin/bash
+#CPU
+sudo stress
+
 #/dev/changeToYourDisk
 sudo smartctl -a /dev/nvme0
 #/dev/changeToYourDisk
