@@ -20,5 +20,6 @@ sudo hdparm -tT /dev/nvme0n1
 lspci | grep -i VGA
 glxinfo | grep -i "OpenGL"
 #This is an old tool, so it's not stressful enough. If you need a more stressful test, you should use other tools.
-glxgears
+timeout 30s glxgears
+
 
