@@ -2,8 +2,8 @@
 
 #CPU
 # --cpu cores --timeout 1m/1s(1 min/1 sec)
-sudo stress --cpu $(nproc) --timeout 1m
-sudo stress --cpu 1 --timeout 1m
+stress --cpu $(nproc) --timeout 1m
+stress --cpu 1 --timeout 1m
 
 #RAM
 #memtester testMemorySize testIterations
@@ -16,6 +16,9 @@ sudo smartctl -a /dev/nvme0
 #               /dev/changeToYourDisk
 sudo hdparm -tT /dev/nvme0n1
 
-
-
+#GPU
+lspci | grep -i VGA
+glxinfo | grep -i "OpenGL"
+#This is an old tool, so it's not stressful enough. If you need a more stressful test, you should use other tools.
+glxgears
 
