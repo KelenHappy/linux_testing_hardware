@@ -19,6 +19,11 @@ sudo apt-get install smartmontools
 sudo apt-get install hdparm  
 ```
 
+## Run 
+If you want to change the test file, just edit the file [run.sh](run.sh).  
+### CPU
+
+
 
 
 
