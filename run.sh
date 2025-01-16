@@ -7,10 +7,12 @@ sudo stress --cpu 1 --timeout 1m
 #memtester testMemorySize testIterations
 sudo memtester 1G 1
 
-#
-#/dev/changeToYourDisk
+#SSD
+#                /dev/changeToYourDisk
 sudo smartctl -a /dev/nvme0
-#/dev/changeToYourDisk
+#               /dev/changeToYourDisk
 sudo hdparm -tT /dev/nvme0n1
+
+
 
 
